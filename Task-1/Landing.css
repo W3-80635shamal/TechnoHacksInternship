@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 100px; 
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.upper {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-bottom: 2rem;
+}
+
+.services h2 {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 1rem;
+}
+
+.services .service {
+    text-align: center;
+    max-width: 300px; 
+    margin: 1rem;
+}
+
+.services .service img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-left: 1rem;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .services .service {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+}
